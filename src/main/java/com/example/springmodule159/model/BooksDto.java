@@ -11,4 +11,5 @@ public class BooksDto {
     private Long id;
     private String bookName;
     private String type;
+    private String number;
 }
