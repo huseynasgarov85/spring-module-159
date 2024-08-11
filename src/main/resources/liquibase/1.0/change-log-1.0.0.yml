@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: change customer
+      author: Huseyn Asgarov
+      labels: example-label
+      context: example-context
+      comment: example-comment
+      changes:
+        - createTable:
+            tableName: customer
+            columns:
+              - column:
+                  name: name
+                  type: varchar(30)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: surname
+                  type: varchar(30)
+                  constraints:
+                    nullable: false

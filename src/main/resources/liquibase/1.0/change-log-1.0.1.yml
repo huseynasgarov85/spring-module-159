@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: change pasport
+      author: Huseyn Asgarov
+      labels: example-label
+      context: example-context
+      comment: example-comment
+      changes:
+        - createTable:
+            tableName: pasport
+            columns:
+              - column:
+                  name: fin
+                  type: varchar(30)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: expireDate
+                  type: varchar(30)
+                  constraints:
+                    nullable: false

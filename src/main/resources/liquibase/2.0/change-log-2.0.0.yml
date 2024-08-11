@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: change card
+      author: Huseyn Asgarov
+      labels: example-label
+      context: example-context
+      comment: example-comment
+      changes:
+        - createTable:
+            tableName: card
+            columns:
+              - column:
+                  name: pan
+                  type: varchar(30)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: balance
+                  type: double
+                  constraints:
+                    nullable: false
